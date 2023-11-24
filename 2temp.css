@@ -1,0 +1,147 @@
+.game{
+    width:600px;
+    height:150px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sprite{
+    position: relative;
+    translate:18px 120px;
+    width:20px;
+    height:40px;
+    background-image:url("images/pngegg.png");
+    background-position: center;
+    background-size:cover;
+}
+.object{
+    position: relative;
+    translate:585px 130px;
+    width:15px;
+    height:30px;
+    background-image:url("images/cacti---cacti2-removebg-preview.png");
+    background-position: center;
+    background-size:cover;
+}
+
+.object2{
+    position: relative;
+    translate:250px 130px;
+    width:15px;
+    height:30px;
+    background-image:url("images/cacti---cacti2-removebg-preview.png");
+    background-position: center;
+    background-size:cover;
+}
+
+.obj3{
+    position: relative;
+    translate:-40px 23px;
+    width:30px;
+    height:27px;
+    background-image:url("images/cacti---cacti2-removebg-preview.png");
+    background-position:left;
+    background-size:contain;
+}
+
+
+@keyframes inft {
+    0% {translate:585px 80px;}
+    100%{translate:-20px 80px;}
+}
+
+@keyframes inft1 {
+    0% {translate:585px 50px;}
+    100%{translate:-20px 50px;}
+}
+@keyframes doubbble {
+    0% {translate:585px 23px;}
+    100%{translate:-20px 23px;}
+}
+
+.inft2{
+    animation: inft1 3s linear infinite;
+}
+.inft3{
+    animation: doubbble 3s linear;
+}
+.inf{
+    animation: inft 3s linear infinite;
+}
+@keyframes jmp {
+    0%   {translate:18px 120px;}
+    50%  {translate:20px 70px;}
+    100% {translate:18px 120px;}
+  }
+
+
+.jump{
+    animation:jmp .8s normal ;
+}
+
+.scoreclass{
+    position: relative;
+    translate:400px -110px;
+}
+
+
+
+.textsunder{
+    height:100px;
+    width:250px;
+    margin:auto;
+    font-size: 12px;
+    align-content: center;
+}
+li{
+    font-size: 8px;
+}
+
+.cloud{
+    height:20px;
+    width: 46px;
+    background-image:url(images/Capture-removebg-preview.png) ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    translate: 600px -100px;
+    animation: cloudx 20s linear infinite;
+}
+
+@keyframes cloudx {
+    0%{translate: 600px -100px;}
+    100%{translate: -60px -100px;}
+}
+
+.cloud1{
+    height:20px;
+    width: 46px;
+    background-image:url(images/Capture-removebg-preview.png) ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    translate: 619px -130px;
+    animation:cloud1x 20s linear infinite;
+}
+@keyframes cloud1x {
+    0%{translate: 619px -130px;}
+    100%{translate: -41px -130px;}
+}
+
+.vfx{
+    animation: cloud2x 20s linear infinite;
+}
+.cloud2{
+    height:20px;
+    width: 46px;
+    background-image:url(images/Capture-removebg-preview.png) ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    translate: 600px -140px;
+}
+@keyframes cloud2x {
+    0%{translate: 619px -130px;}
+    100%{translate: -41px -130px;}
+}
